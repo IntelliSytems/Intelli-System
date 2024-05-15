@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intelli System - Accueil</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #fca7ff;
+            color: #fff;
+            padding: 1rem;
+        }
+
+        .burger-menu {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .burger-icon {
+            width: 24px;
+            height: 24px;
+            fill: #fff;
+        }
+
+        .burger-icon:hover {
+            fill: #ccc;
+        }
+
+        #burger-toggle {
+            display: none;
+        }
+
+        .menu {
+            display: none;
+        }
+
+        #burger-toggle:checked ~ .menu {
+            display: block;
+        }
+
+        .menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu ul li {
+            margin-bottom: 1rem;
+        }
+
+        .menu ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .menu ul li a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .menu ul {
+                flex-direction: column;
+            }
+
+            .menu ul li {
+                margin: 0.5rem 0;
+            }
+        }
+
+        main {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .btn {
+            background-color: #333;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: #555;
+        }
+
+        section {
+            margin: 0 auto;
+            max-width: 800px;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 320px) {
+            h1 {
+                font-size: 1.2rem;
+            }
+
+            p {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="burger-menu">
+            
+            <path d="M3 12h18M3 6h18M3 18h18"></path>
+            </svg>
+            
+            <input type="checkbox" id="burger-toggle">
+            <label for="burger-toggle" class="burger-icon">&#9776;</label>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">À propos</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main> 
+        <section>
+            <h1>Bienvenue chez Intelli System</h1>
+            <p>Nous sommes une entreprise spécialisée dans la conception et la mise en place de systèmes clés en main pour les particuliers et les entreprises.</p>
+            <p>Que vous ayez besoin d'une solution de sécurité, d'automatisation ou de gestion de l'énergie, nous avons les compétences et l'expertise nécessaires pour répondre à vos besoins.</p>
+            <a href="#" class="btn">En savoir plus</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2022 Intelli System. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

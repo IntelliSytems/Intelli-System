@@ -1,188 +1,163 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intelli System - Accueil</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #fca7ff;
-            color: #fff;
-            padding: 1rem;
-        }
-
-        .burger-menu {
-            display: flex;
-            align-items: center;
-            cursor: pointer;
-        }
-
-        .burger-icon {
-            width: 24px;
-            height: 24px;
-            fill: #fff;
-        }
-
-        .burger-icon:hover {
-            fill: #ccc;
-        }
-
-        #burger-toggle {
-            display: none;
-        }
-
-        .menu {
-            display: none;
-        }
-
-        #burger-toggle:checked ~ .menu {
-            display: block;
-        }
-
-        .menu ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .menu ul li {
-            margin-bottom: 1rem;
-        }
-
-        .menu ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        .menu ul li a:hover {
-            text-decoration: underline;
-        }
-
-        @media (max-width: 768px) {
-            .menu ul {
-                flex-direction: column;
-            }
-
-            .menu ul li {
-                margin: 0.5rem 0;
-            }
-        }
-
-        main {
-            padding: 2rem;
-            text-align: center;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem;
-        }
-
-        .btn {
-            background-color: #333;
-            color: #fff;
-            padding: 0.5rem 1rem;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-
-        .btn:hover {
-            background-color: #555;
-        }
-
-        section {
-            margin: 0 auto;
-            max-width: 800px;
-        }
-
-        h1 {
-            font-size: 2rem;
-        }
-
-        p {
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
-        }
-
-        a {
-            color: #333;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        @media (max-width: 768px) {
-            nav ul {
-                flex-direction: column;
-            }
-
-            nav ul li {
-                margin: 0.5rem 0;
-            }
-        }
-
-        @media (max-width: 576px) {
-            h1 {
-                font-size: 1.5rem;
-            }
-
-            p {
-                font-size: 1rem;
-            }
-        }
-
-        @media (max-width: 320px) {
-            h1 {
-                font-size: 1.2rem;
-            }
-
-            p {
-                font-size: 0.8rem;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Intelli Chauff' • Accueil</title>
 </head>
 <body>
-    <header>
-        <div class="burger-menu">
-            
-            <path d="M3 12h18M3 6h18M3 18h18"></path>
-            </svg>
-            
-            <input type="checkbox" id="burger-toggle">
-            <label for="burger-toggle" class="burger-icon">&#9776;</label>
-            <nav class="menu">
-                <ul>
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">À propos</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
+    <nav>
+        <div class="bar">
+            <a href="index.html" class="to-home">
+                <img src="medias/logos/1.png" alt="" id="logo-principal">
+                <img src="medias/logos/2.png" alt="" id="logo-secondaire">
+            </a>
+            <div class="toggler">
+                <div class="bar-menu" id="menu-bar"></div>
+                <div class="middle-bars">
+                    <div class="middleone-bar-menu" id="menu-bar"></div>
+                    <div class="middletwo-bar-menu" id="menu-bar"></div>
+                </div>
+                <div class="bar-menu" id="menu-bar"></div>
+            </div>
         </div>
-    </header>
-    <main> 
-        <section>
-            <h1>Bienvenue chez Intelli System</h1>
-            <p>Nous sommes une entreprise spécialisée dans la conception et la mise en place de systèmes clés en main pour les particuliers et les entreprises.</p>
-            <p>Que vous ayez besoin d'une solution de sécurité, d'automatisation ou de gestion de l'énergie, nous avons les compétences et l'expertise nécessaires pour répondre à vos besoins.</p>
-            <a href="#" class="btn">En savoir plus</a>
+        <div class="menu">
+            <a href="index.html">
+                <h3>Accueil</h3>
+            </a>
+            <a href="">
+                <h3>Boutique</h3>
+            </a>
+            <a href="">
+                <h3>Nos partenaires</h3>
+            </a>
+            <a href="">
+                <h3>Notre équipe</h3>
+            </a>
+            <a href="">
+                <h3>News letter</h3>
+            </a>
+            <a href="">
+                <h3>À propos</h3>
+            </a>
+        </div>
+    </nav>
+    <main>
+        <section class="header">
+            <img src="medias/video-accueil.gif" loop muted/>
+            <h1 class="titre-page">Un système de <span id="text-changeant"></span> intelligent pour votre logement.</h1>
+        </section> 
+        <section class="boutique">
+            <h2 class="section-title">
+                Nos solutions:
+            </h2>
+            <div class="carroussel">
+                <div class="pages" id="p1">
+                    <div class="product-box" id="product-1">
+                        <div class="left">
+                            <h3 class="product-title">Nom solution 1:</h3>
+                            <br>
+                            <p class="product-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas minima suscipit vero quo numquam consequuntur sed atque illum sit laboriosam eos expedita nostrum perspiciatis saepe assumenda non aperiam, sapiente velit dolore ullam quis, ipsa eum repellat animi. Quaerat, id. Deleniti harum saepe aliquam sunt facere, nesciunt voluptas, officia, laboriosam omnis praesentium culpa qui aliquid odio. Maiores, labore eligendi maxime accusantium esse, consequuntur perspiciatis molestiae repellat explicabo minus similique culpa in vel itaque veniam omnis. Perferendis voluptatem, reprehenderit deserunt quas modi animi, culpa autem non natus ipsa ex maxime cumque adipisci distinctio enim totam, quod deleniti porro fugiat. Dignissimos nam nisi iure obcaecati architecto aliquid odit nostrum qui numquam vel, minima ut corporis eos incidunt doloribus quo reiciendis explicabo repudiandae delectus magnam voluptatum unde blanditiis accusantium tenetur. Tempore nesciunt, veniam quibusdam praesentium id laborum recusandae nihil labore obcaecati ipsum sint totam dicta a quas aliquid, iusto qui, beatae maiores! Qui, iusto.</p>
+                            <br>
+                            <button class="go-to-product" onclick="window.location.href='test.html';"><h3>Voir plus à propos de cette solution</h3></button>
+                        </div>
+                        <img src="medias/no-image.png" alt="">
+                    </div>
+                    <div class="product-box" id="product-2">
+                        <div class="left">
+                            <h3 class="product-title">Nom solution 2:</h3>
+                            <br>
+                            <p class="product-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate voluptatibus expedita mollitia dolore totam! Maxime aperiam rerum alias pariatur laboriosam itaque ipsam sit laudantium eveniet, quaerat consectetur aut soluta ipsa quidem architecto animi ducimus unde placeat corporis adipisci vitae! Libero consequatur officia blanditiis suscipit sunt accusamus voluptas ex odit temporibus voluptatibus aliquam, nihil, neque aspernatur perferendis officiis hic enim reprehenderit dignissimos. Nisi amet officiis laudantium dolorum error alias nam porro corporis sequi eligendi fugiat, totam quidem enim voluptatem saepe nobis a odio cum sint! Qui vitae veritatis repellendus. Quis explicabo reiciendis reprehenderit aut, laborum voluptas, sint culpa facere distinctio repellendus, officia inventore! Praesentium necessitatibus laudantium velit voluptatem itaque maxime quia sequi explicabo. Aliquam tempora tempore fugit, at dolores neque alias voluptatum a molestiae officiis deserunt quos fuga amet nesciunt obcaecati pariatur, animi et dicta labore tenetur aperiam nobis maxime minima. Quo, sed accusamus quasi impedit qui, illo et aspernatur voluptatem rerum quis possimus necessitatibus! Perspiciatis, ut! Iste sapiente assumenda earum aut impedit, praesentium optio? Minus facilis ex numquam repellendus ipsam.</p>
+                            <br>
+                            <button class="go-to-product" onclick="window.location.href='test.html';"><h3>Voir plus à propos de cette solution</h3></button>
+                        </div>
+                        <img src="medias/no-image.png" alt="">
+                    </div>
+                    <div class="product-box" id="product-3">
+                        <div class="left">
+                            <h3 class="product-title">Nom solution 3:</h3>
+                            <br>
+                            <p class="product-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti natus, quis facilis, est delectus reprehenderit accusantium nemo ab, pariatur et fugiat harum eius. Assumenda corporis, corrupti, reiciendis dolores optio molestias rem doloremque animi saepe inventore veritatis accusamus iste nisi. Amet deleniti dolorum at omnis saepe similique sit aliquid voluptatibus fugit cumque odit vel expedita tempore, fuga corporis. Eius laboriosam minus aut neque quia exercitationem error nam rem voluptatibus earum. Autem amet vel nihil ad at dicta eum placeat ipsam tempore sunt accusamus earum illum ratione voluptates exercitationem, illo assumenda maiores quod ullam nulla cum facilis quae. Consequatur, ad fugiat. Explicabo maiores quia nobis eos consectetur tenetur eligendi laborum. Facilis non possimus ullam sit, sint accusamus soluta magnam adipisci enim, deserunt, laboriosam totam repellat id dolorum vitae iste ratione fuga voluptates cumque! Laboriosam at magnam et natus deserunt sequi sunt officia blanditiis officiis atque.</p>
+                            <br>
+                            <button class="go-to-product" onclick="window.location.href='test.html';"><h3>Voir plus à propos de cette solution</h3></button>
+                        </div>
+                        <img src="medias/no-image.png" alt="">
+                    </div>
+                    <div class="product-box" id="product-4">
+                        <div class="left">
+                            <h3 class="product-title">Nom solution 4:</h3>
+                            <br>
+                            <p class="product-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut eveniet quis qui quia blanditiis, cupiditate eligendi incidunt harum adipisci voluptatibus laborum, provident minima modi veniam quaerat esse saepe nam, corporis omnis placeat! Consequatur maxime illo, aliquid dolorem earum quae perferendis ratione vero molestiae veritatis dicta, officiis, necessitatibus quo id hic nulla incidunt provident optio fuga voluptate animi omnis voluptatibus dignissimos inventore. Asperiores itaque ratione sequi. Laboriosam voluptates saepe libero, neque placeat harum veniam pariatur, optio amet quibusdam repudiandae at nemo voluptatibus maxime velit fugiat sapiente voluptate. Tempora ullam unde at nobis, eum alias obcaecati. Facilis libero molestias veritatis dolorem doloribus harum aspernatur, a corrupti, mollitia, consectetur repudiandae illum sapiente earum quidem assumenda sint voluptate provident aliquam animi necessitatibus sunt eveniet hic error illo.</p>
+                            <br>
+                            <button class="go-to-product" onclick="window.location.href='test.html';"><h3>Voir plus à propos de cette solution</h3></button>
+                        </div>
+                        <img src="medias/no-image.png" alt="">
+                    </div>
+                    <div class="product-box" id="product-5">
+                        <div class="left">
+                            <h3 class="product-title">Nom solution 5:</h3>
+                            <br>
+                            <p class="product-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus tempora, molestias ex quisquam fugit provident asperiores reprehenderit placeat deleniti dolorum odio accusamus voluptatibus. Neque dicta modi ipsa beatae soluta nesciunt, asperiores corrupti excepturi culpa nam.</p>
+                            <br>
+                            <button class="go-to-product" onclick="window.location.href='test.html';"><h3>Voir plus à propos de cette solution</h3></button>
+                        </div>
+                        <img src="medias/no-image.png" alt="">
+                    </div>
+                </div>
+                <div class="controls">
+                    <button class="previous-product">
+                        <h3>➜</h3>
+                    </button>
+                    <button class="next-product">
+                        <h3>➜</h3>
+                    </button>
+                </div>
+            </div>
         </section>
     </main>
+<script>
+let valeur = 1; // Initialiser la valeur à 1
 
-    <footer>
-        <p>&copy; 2022 Intelli System. Tous droits réservés.</p>
-    </footer>
+// Ajouter un écouteur d'événements au bouton .next-product
+document.querySelector('.next-product').addEventListener('click', function() {
+    if(valeur < 5) { // Vérifier que la valeur est inférieure à 5
+        valeur += 1; // Ajouter 1 à la valeur
+    }
+    document.querySelector('#p' + (valeur - 1)).id = 'p' + valeur; // Mettre à jour l'identifiant de la div
+});
+
+// Ajouter un écouteur d'événements au bouton .previous-product
+document.querySelector('.previous-product').addEventListener('click', function() {
+    if(valeur > 1) { // Vérifier que la valeur est supérieure à 1
+        valeur -= 1; // Retirer 1 de la valeur
+    }
+    document.querySelector('#p' + (valeur + 1)).id = 'p' + valeur; // Mettre à jour l'identifiant de la div
+});
+</script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('#text-changeant', {
+      strings: ['chauffage', 'machin', 'bidule'],
+      typeSpeed: 150,
+      backSpeed: 40,
+      loop:true
+    });
+</script>
+<script>
+    // Sélectionnez l'élément avec la classe .toggler
+const togglerElement = document.querySelector('.toggler');
+
+// Ajoutez un gestionnaire d'événements pour le clic
+togglerElement.addEventListener('click', () => {
+  // Sélectionnez la balise <body>
+  const bodyElement = document.body;
+
+  // Basculez la classe .opened-menu
+  bodyElement.classList.toggle('opened-menu');
+});
+
+</script>
 </body>
 </html>

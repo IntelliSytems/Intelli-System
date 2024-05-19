@@ -1,0 +1,176 @@
+@font-face {
+    font-family: 'Contrail One';
+    src: url("../fonts/ContrailOne-Regular.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    outline: none;
+}
+
+body {
+    background-color: #F5F5F5;
+    font-family: 'Contrail One';
+}
+
+/* NAVBAR */
+
+
+.to-home IMG {
+    height: 30px;  
+}
+
+.to-home #logo-secondaire {
+    display: none;
+    transition-duration: .5s;
+}
+
+.to-home #logo-principal {
+    display: flex;
+    transition-duration: .5s;
+}
+
+.to-home:hover #logo-secondaire {
+    display: flex;
+}
+.to-home:hover #logo-principal {
+    display: none;
+}
+
+nav .bar {
+    background-color: #FDBFB7 ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-bottom: 1px solid whitesmoke;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.middle-bars #menu-bar {
+    height: 3px;
+    border-radius: 0px;
+    overflow: visible;
+    background-color: white;
+    border-radius: 3px;
+}
+
+.middleone-bar-menu {
+    transition-duration: .2s;
+    transform: translateY(1.5px);
+}
+
+.middletwo-bar-menu {
+    transition-duration: .2s;
+    transform: translateY(-1.5px);
+}
+
+.bar-menu {
+    height: 3px;
+    border-radius: 3px;
+    transition-duration: .2s;
+    background-color: white;
+}
+
+.middle-bars {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    overflow: hidden;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.toggler {
+    width: 19px;
+    cursor: pointer;
+}
+
+.menu {
+    overflow: hidden;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: #FDBFB7;
+    width: fit-content;
+    height: 0px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition-duration: .3s;
+    float: right;
+}
+
+.menu a {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+.opened-menu .menu {
+    height: calc(152px + 2.5rem);
+    padding-bottom: .5rem;
+}
+
+.opened-menu .bar-menu {
+    visibility: hidden;
+}
+
+.opened-menu .middle-bars {
+    overflow: visible;
+}
+
+.bar a:hover h1 {
+    color: #e8887b;
+}
+
+.toggler:hover #menu-bar{
+    background-color: #e8887b;
+}
+
+.opened-menu .toggler:hover #menu-bar{
+    background-color: #e8887b;
+}
+
+.opened-menu .middle-bars #menu-bar {
+    height: 3px;
+    border-radius: 0px;
+    overflow: visible;
+    background-color: white;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.menu a:hover h3 {
+    color: #e8887b;
+}
+
+.menu a h3 {
+    transition-duration: .5s;
+}
+
+.opened-menu .middleone-bar-menu {
+    transform: rotate(45deg);
+    margin-top: 3px;
+}
+
+.opened-menu .middletwo-bar-menu {
+    transform: rotate(-45deg);
+    margin-top: -3px;
+} 
